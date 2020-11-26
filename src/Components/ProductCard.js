@@ -29,17 +29,18 @@ const ProductCard = props => {
     return (
         <div className="main-product" onClick={handleClick}>
             <div className="product">
-                <Link className="PP-Link" to="/ProductPage"></Link>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={props.product.image_link} />
-                    <Card.Body>
-                        <Card.Title>{props.product.name}</Card.Title>
-                        <Card.Text>${props.product.price}0</Card.Text>
-                        <Button variant="primary" size="sm" onClick={handleCartClick}>
-                            Add To Cart
-                    </Button>
-                    </Card.Body>
-                </Card>
+                <Link className="Poduct-Link" to="/ProductPage">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={props.product.image_link} />
+                        <Card.Body>
+                            <Card.Title>{props.product.name}</Card.Title>
+                            <Card.Text>${props.product.price}0</Card.Text>
+                            <Button variant="primary" size="sm" onClick={handleCartClick}>
+                                Add To Cart
+                            </Button>
+                        </Card.Body>
+                    </Card>
+                </Link>
             </div>
         </div>
     )

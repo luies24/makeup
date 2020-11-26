@@ -34,18 +34,6 @@ h1 {
   padding: 20px;
   padding-left: 5px;
   padding-right: 5px;
-  /* width: 160px; */
-}
-
-.PP-Link{
-  padding: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-
-  /* display: inline-block;
-  position: fixed;
-  width: 100%;
-  height: 75%; */
 }
 
 h4 {
@@ -89,3 +77,17 @@ span{
   display: block;
 }
 
+.Product-Link{
+  /* padding: 20px;
+  padding-left: 5px;
+  padding-right: 5px; */
+  display: inline-flex;
+  text-align: center;
+  margin: 5px;
+
+  display: inline-block;
+  position: fixed;
+  width: 300px;
+  height: 75%;
+  color: #000;
+}
