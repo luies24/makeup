@@ -1,68 +1,75 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# README
 
-## Available Scripts
+# Makeup Shop App
 
-In the project directory, you can run:
+> Makeup ecommerce website
 
-### `yarn start`
+## Table of contents
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Status](#status)
+- [Contact](#contact)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## General info
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Allows users to browse through a catalog of makeup and purchase the products they like.
 
-### `yarn build`
+## Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js - Version 17.0.0
+- HTML - Version 5
+- CSS - Version 3 
+- React-bootstrap - Version 1.4.0
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project, install it locally by cloning the GitHub repository and 
+typing the following command in your terminal:
 
-### `yarn eject`
+$ npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Code Examples
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React.js 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+return (
+        <div className="main-product" onClick={handleClick}>
+            <div className="product">
+                <Link className="Poduct-Link" to="/ProductPage">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={props.product.image_link} />
+                        <Card.Body>
+                            <Card.Title>{props.product.name}</Card.Title>
+                            <Card.Text>${props.product.price}0</Card.Text>
+                            <Button variant="primary" size="sm" onClick={handleCartClick}>
+                                Add To Cart
+                            </Button>
+                        </Card.Body>
+                    </Card>
+                </Link>
+            </div>
+        </div>
+    )
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Users can click on a product and get more detail.
+- When viewing a product users can add to cart.
+- Users can look at their cart and see what product they have.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Status
 
-### Code Splitting
+Project is: unfinished and currently making changes and adding features.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Created by [Luis Garcia](https://www.linkedin.com/in/garciale308/)
+Feel free to contact us to talk music or talk code!!! 
