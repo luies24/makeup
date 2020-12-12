@@ -15,7 +15,12 @@ export default function ProductCard({ product, cartList }) {
             <h1 className="product-page-h1">{product.name}</h1>
             <p className="product-page-p">{product.description}</p>
             <p className="product-page-p">${product.price}0</p>
-            <Button variant="primary" size="sm" onClick={handleCartClick}>
+            <Button
+                className="product-page-button"
+                variant="primary"
+                size="sm"
+                onClick={handleCartClick}
+            >
                 Add To Cart
             </Button>
         </div>

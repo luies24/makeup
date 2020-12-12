@@ -108,3 +108,10 @@ span{
   font-size: x-large;
   margin-left: 50px;
 }
+
+.product-page-button {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
