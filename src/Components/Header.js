@@ -15,6 +15,7 @@ export default function Header() {
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>
                 </Form>
+                <button className="cart-button"><Link to="/Cart">🛒</Link></button>
             </Navbar>
         </>
     )
